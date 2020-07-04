@@ -1,4 +1,4 @@
-# fusonic/opengraph
+# Clone of fusonic/opengraph to handle special dependency case for its v1
 
 [![Latest Stable Version](https://poser.pugx.org/fusonic/opengraph/v/stable)](https://packagist.org/packages/fusonic/opengraph)
 [![Total Downloads](https://poser.pugx.org/fusonic/opengraph/downloads)](https://packagist.org/packages/fusonic/opengraph)
