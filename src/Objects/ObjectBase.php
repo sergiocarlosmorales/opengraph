@@ -27,6 +27,11 @@ abstract class ObjectBase
     public ?string $description = null;
 
     /**
+     * FB app ID.
+     */
+    public ?string $facebookAppId = null;
+
+    /**
      * The word that appears before the object's title in a sentence. This is an list of words from 'a', 'an', 'the',
      * ' "" ', or 'auto'. If 'auto' is chosen, the consumer of the object will chose between 'a' or 'an'. The default is
      * the blank, "".
@@ -132,6 +137,11 @@ abstract class ObjectBase
                 case Property::DESCRIPTION:
                     if ($this->description === null) {
                         $this->description = $value;
+                    }
+                    break;
+                case Property::FACEBOOK_APP_ID:
+                    if ($this->facebookAppId === null) {
+                        $this->facebookAppId = $value;
                     }
                     break;
                 case Property::DETERMINER:
@@ -307,6 +317,10 @@ abstract class ObjectBase
 
         if ($this->description !== null) {
             $properties[] = new Property(Property::DESCRIPTION, $this->description);
+        }
+
+        if ($this->facebookAppId !== null) {
+            $properties[] = new Property(Property::FACEBOOK_APP_ID, $this->facebookAppId);
         }
 
         if ($this->determiner !== null) {
