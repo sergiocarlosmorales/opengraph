@@ -13,6 +13,7 @@ class Property
     const AUDIO_URL = "og:audio:url";
     const DESCRIPTION = "og:description";
     const DETERMINER = "og:determiner";
+    const FACEBOOK_APP_ID = "fb:app_id";
     const IMAGE = "og:image";
     const IMAGE_HEIGHT = "og:image:height";
     const IMAGE_SECURE_URL = "og:image:secure_url";
