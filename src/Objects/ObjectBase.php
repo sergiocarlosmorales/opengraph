@@ -30,7 +30,7 @@ abstract class ObjectBase
     /**
      * FB app ID.
      */
-    public ?string $facebookAppId = null;
+    public $facebookAppId = null;
 
     /**
      * The word that appears before the object's title in a sentence. This is an list of words from 'a', 'an', 'the',
